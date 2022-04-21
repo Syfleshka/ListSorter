@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/TableSorter/static/css/main.98c41624.css",
-    "main.js": "/TableSorter/static/js/main.d8cc672b.js",
+    "main.css": "/TableSorter/static/css/main.4578d0a1.css",
+    "main.js": "/TableSorter/static/js/main.361544a3.js",
     "static/js/787.445fdfcc.chunk.js": "/TableSorter/static/js/787.445fdfcc.chunk.js",
     "index.html": "/TableSorter/index.html",
-    "main.98c41624.css.map": "/TableSorter/static/css/main.98c41624.css.map",
-    "main.d8cc672b.js.map": "/TableSorter/static/js/main.d8cc672b.js.map",
+    "main.4578d0a1.css.map": "/TableSorter/static/css/main.4578d0a1.css.map",
+    "main.361544a3.js.map": "/TableSorter/static/js/main.361544a3.js.map",
     "787.445fdfcc.chunk.js.map": "/TableSorter/static/js/787.445fdfcc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.98c41624.css",
-    "static/js/main.d8cc672b.js"
+    "static/css/main.4578d0a1.css",
+    "static/js/main.361544a3.js"
   ]
 }
