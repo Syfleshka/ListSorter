@@ -1,0 +1,25 @@
+@import "mixins";
+.header_center {
+  text-align: center;
+}
+
+.data-loading {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  box-sizing: border-box;
+  min-height: 100%;
+  margin: auto 0;
+  @include for-tablet-portrait-up {
+    padding: 0 40px;
+  }
+}
+
+.loading {
+  animation: loading 2s ease-in-out infinite;
+}
+@keyframes loading {
+  0% { opacity: 1}
+  50% { opacity: .5}
+  100% { opacity: 1}
+}
