@@ -21,13 +21,13 @@ code {
 #root {
   width: 100%;
   max-width: 1920px;
-  padding: 20px 0;
+  padding: 20px 0 0;
   box-sizing: border-box;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   @include for-tablet-portrait-up {
-    padding: 40px 0;
+    padding: 40px 0 0;
   }
 }
 

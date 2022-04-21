@@ -1,0 +1,26 @@
+@import "mixins";
+
+.error {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: darkred;
+  display: flex;
+  flex-direction: row;
+}
+.error__text {
+  width: 100%;
+  padding: 4px;
+  margin: 0;
+}
+.error__close {
+  border: none;
+  background-color: $color-link;
+  color: $color-light;
+  cursor: pointer;
+  transition: background-color .2s;
+}
+.error__close:hover {
+  background-color: $color-link-hover;
+  transition: background-color .2s;
+}
