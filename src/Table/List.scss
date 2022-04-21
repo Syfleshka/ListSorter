@@ -1,10 +1,12 @@
 @import "../mixins";
 
-$table-color-bg: $color-dark;
-$table-color-child: #E9ECEF;
+$table-color-bg: #0B061C;
+$table-color-border-bottom: #271450;
 $table-color-list: #DEE2E6;
 
 .data-list {
+  width: 100%;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   margin: 0 20px;
@@ -15,20 +17,50 @@ $table-color-list: #DEE2E6;
   box-sizing: border-box;
   min-height: 100%;
   list-style: none;
+  background-color: $table-color-bg;
 }
 .data-list__parent {
-  //border-bottom: 1px solid;
-  //border-bottom-color: cadetblue;
+  border-bottom: 1px solid;
+  border-bottom-color: $table-color-border-bottom;
+}
+.data-list__parent:last-child {
+  border-bottom: none;
+}
+.data-list__parent:hover > .data-list-parent__header {
+  background-color: $table-color-border-bottom;
 }
 .data-list-parent__header {
   margin: 0;
   cursor: pointer;
-  padding: 8px 0;
+  padding: 8px 12px;
+  transition: background-color .3s;
+}
+h5.data-list-parent__header {
+  padding-left: 24px;
 }
 .data-list-parent__list {
+  list-style: none;
   margin: 0;
+  padding: 0 0 12px 0 ;
+  transition: all .3s;
+}
+.data-list-parent-list__children {
+  padding: 8px 8px 8px 36px;
+  border-bottom: 1px solid;
+  border-bottom-color: $table-color-border-bottom;
+  transition: background-color .3s;
+}
+.data-list-parent-list__children:last-child {
+  border-bottom: none;
+  margin-bottom: 12px;
+}
+.data-list-parent-list__children:hover {
+  background-color: $table-color-border-bottom;
 }
 
 .hidden {
   display: none;
+}
+.active {
+
 }

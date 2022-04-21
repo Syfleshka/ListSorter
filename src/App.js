@@ -7,7 +7,7 @@ const App = () => {
     const [status, setStatus] = useState({
         isLoading: true,
         requestFailed: false,
-        error: 'no'
+        error: 'ok'
     });
     const [tableData, setTableData] = useState([])
 
