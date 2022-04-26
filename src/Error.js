@@ -1,12 +1,12 @@
 import './Error.scss';
 import {useState} from "react";
 function Error(props) {
-    const [close, setClose] = useState(false)
+    const [isClosed, setIsClosed] = useState(false)
     return <>
-        {close ? '' :
+        {isClosed ? '' :
             <div className={`error`}>
                 <p className={`error__text`}>{props.error.toString()}</p>
-                <button className={`error__close`} onClick={() => setClose(true)}>Close</button>
+                <button className={`error__close`} onClick={() => setIsClosed(true)}>Close</button>
             </div>
         }
     </>;
