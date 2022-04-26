@@ -53,7 +53,7 @@
             "last 1 safari version"
         ]
     },
-    "homepage": "https://syfleshka.github.io/TableSorter/",
+    "homepage": "https://syfleshka.github.io/ListSorter/",
     "prettier": {
         "semi": true,
         "singleQuote": true,
