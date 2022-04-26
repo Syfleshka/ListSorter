@@ -2,8 +2,6 @@ import './List.scss';
 import ListMain from './ListMain';
 import ListOther from './ListOther';
 
-//const _ = require('lodash');
-
 export function List(props) {
     const modifyData = (key, data, mainDataList = []) => {
         let sortedData = {};
@@ -31,31 +29,6 @@ export function List(props) {
         return sortedData;
     };
 
-    /*
-    const makePartition = (data, mainDataList = []) => {
-        const [main, other] = _.partition(data, (item) =>
-            mainDataList.length ? mainDataList.includes(item.parentID) : !!item.parentID
-        );
-
-        return {main, other};
-    };
-
-    const groupByParentId = (main) => {
-        const groups = _.groupBy(main, "parentID");
-
-        return _.map(groups, (value, key) => ({
-            header: key,
-            items: value
-        }));
-    };
-
-    const makeData = (data, mainDataList = []) => {
-        const {main, other} = makePartition(data, mainDataList);
-        const groupedMain = groupByParentId(main);
-
-        return {main: groupedMain, other};
-    };
-    */
     const sortedTable = modifyData(`parentID`, props.data);
     console.log(sortedTable);
     return (
